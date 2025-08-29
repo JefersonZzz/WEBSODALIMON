@@ -1,0 +1,110 @@
+/* Estilos generales */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+  font-family: 'Cabin', sans-serif;
+}
+
+header.scrolled {
+  background: #F8F9FA;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Contenedor interno */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */c
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: start; 
+  padding: 10px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto; 
+  object-fit: contain;
+}
+
+/* Menú desktop */
+.nav-links {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2C2C2C;
+  font-weight: 1000;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #1E4D8B;
+}
+
+/* Botón hamburguesa (oculto en desktop) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #2C2C2C;
+  border-radius: 2px;
+}
+
+/* Menú móvil */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #FFFFFF;
+  padding: 1rem;
+}
+
+.mobile-menu.active {
+  display: flex;
+}
+
+.mobile-menu a {
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: #2C2C2C;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.mobile-menu a:hover {
+  color: #FFD700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/*'Red Hat Display', sans-serif
+'Cabin', sans-serif*/

@@ -1,0 +1,14 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Espaciado entre el header y el carrusel */
+}
+
+app-header {
+  display: block;
+  margin-bottom: 2.3rem !important; /* Forzar el espaciado */
+}
+
+app-carousel {
+  display: block;
+}

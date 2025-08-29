@@ -1,0 +1,29 @@
+<header [class.scrolled]="isScrolled">
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">
+      <img [src]="DATA.routerImage" alt="SODA LIMON">
+    </div>
+
+    <!-- Menú desktop -->
+    <nav class="nav-links">
+      <a href="#">Inicio</a>
+      <a href="#">Productos</a>
+      <a href="#">Nosotros</a>
+      <a href="#">Contacto</a>
+    </nav>
+
+    <!-- Botón hamburguesa -->
+    <div class="hamburger" (click)="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <!-- Menú móvil -->
+  <div class="mobile-menu" [class.active]="isMenuOpen">
+    <a href="#" (click)="toggleMenu()">Inicio</a>
+    <a href="#" (click)="toggleMenu()">Productos</a>
+    <a href="#" (click)="toggleMenu()">Nosotros</a>
+    <a href="#" (click)="toggleMenu()">Contacto</a>
+  </div>
+</header>

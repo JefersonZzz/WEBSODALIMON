@@ -1,0 +1,30 @@
+<div class="carousel-container">
+  <div 
+    class="carousel-slide" 
+    *ngFor="let slide of slides; let i = index"
+    [class.active]="i === currentIndex">
+    
+    <!-- Imagen -->
+    <div class="slide-image">
+      <img [src]="slide.image" [alt]="slide.title">
+    </div>
+
+    <!-- Texto -->
+    <div class="slide-text">
+      <h2>{{ slide.title }}</h2>
+      <p>{{ slide.subtitle }}</p>
+      <a [href]="slide.buttonLink" class="btn">{{ slide.buttonText }}</a>
+    </div>
+  </div>
+  
+  <!-- Indicadores en forma de líneas -->
+  <div class="carousel-indicators">
+    <div 
+      class="line" 
+      *ngFor="let slide of slides; let i = index" 
+      [class.active]="i === currentIndex">
+    </div>
+  </div>
+</div>
+
+
