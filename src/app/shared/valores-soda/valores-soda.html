@@ -1,0 +1,15 @@
+<section class="valores-section">
+  <h2 class="title">¡Conoce nuestros valores!</h2>
+
+  <div class="valores-grid">
+    <div class="valor-card" *ngFor="let v of valores">
+      <div class="icon-container">
+        <!-- Feather renderiza aquí -->
+        <i [attr.data-feather]="v.icon"></i>
+      </div>
+      <h3 class="valor-title">{{ v.titulo }}</h3>
+      <p class="valor-text">{{ v.descripcion }}</p>
+    </div>
+  </div>
+</section>
+

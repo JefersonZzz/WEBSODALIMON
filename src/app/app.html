@@ -1,8 +1,18 @@
-<div class="main-container">
+<header>
   <app-header></app-header>
-  <app-carousel></app-carousel>
-</div>
+</header>
+>
 
-<app-promo-card></app-promo-card>
+<main>
+  <router-outlet></router-outlet>
+  
+  <app-herobanner></app-herobanner>
+  <app-promo-card></app-promo-card>
+  <app-historia-soda></app-historia-soda>
+  <app-esencia-proposito></app-esencia-proposito>
+  <app-valores-soda></app-valores-soda>
+</main>
 
-<router-outlet></router-outlet>
+<footer>
+  <app-footer></app-footer>
+</footer>

@@ -3,16 +3,15 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #FFFFFF;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  transition: all 0.3s ease-in-out;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s ease, transform 0.3s ease;
   z-index: 1000;
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
 }
 
-header.scrolled {
-  background: #F8F9FA;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+header.hidden {
+  transform: translateY(-100%);
 }
 
 /* Contenedor interno */
@@ -48,13 +47,13 @@ header.scrolled {
 
 .nav-links a {
   text-decoration: none;
-  color: #2C2C2C;
+  color: #000000;
   font-weight: 1000;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #1E4D8B;
+  color: #09478e;
 }
 
 /* Botón hamburguesa (oculto en desktop) */

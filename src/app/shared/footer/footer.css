@@ -1,0 +1,140 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    align-items: start;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .footer-logo img {
+    max-width: 58%;
+    height: auto;
+  }
+
+  .footer-section {
+    h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 8px;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          opacity: 0.85;
+          transition: opacity 0.3s ease;
+
+          &:hover {
+            opacity: 1;
+            color: #e63946;
+          }
+        }
+      }
+    }
+
+    p {
+      margin: 5px 0;
+      font-size: 0.9rem;
+      opacity: 0.9;
+
+      i {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 20px;
+
+    a {
+      color: #fff;
+      font-size: 0.95rem;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.3s ease;
+
+      i {
+        font-size: 1.2rem;
+      }
+
+      &:hover {
+        color: #e63946;
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    font-size: 0.85rem;
+    opacity: 0.8;
+    line-height: 1.4;
+  }
+
+  /* Botón flotante WhatsApp */
+  .whatsapp-fab {
+    position: fixed;
+    right: max(16px, env(safe-area-inset-right));
+    bottom: max(16px, env(safe-area-inset-bottom));
+    width: 64px;
+    height: 64px;
+    border-radius: 18px; /* estilo “ícono de app” (cuadrado redondeado)*/
+    background: #25d366; /* verde WhatsApp*/
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+    z-index: 10000; /* por encima del footer */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    i {
+      font-size: 38px;
+      line-height: 1;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .whatsapp-fab {
+      width: 56px;
+      height: 56px;
+      right: max(12px, env(safe-area-inset-right));
+      bottom: max(12px, env(safe-area-inset-bottom));
+      i {
+        font-size: 24px;
+      }
+    }
+  }
+}

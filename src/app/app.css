@@ -6,9 +6,10 @@
 
 app-header {
   display: block;
-  margin-bottom: 2.3rem !important; /* Forzar el espaciado */
+  margin-bottom: 2.3rem !important; /*Forzar el espaciado */
 }
 
 app-carousel {
   display: block;
 }
+
