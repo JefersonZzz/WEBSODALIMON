@@ -42,18 +42,19 @@ header.hidden {
 /* Menú desktop */
 .nav-links {
   display: flex;
-  gap: 3rem;
+  gap: 3.5rem;
+  font-size: 1.2rem;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #000000;
+  color: #727272;
   font-weight: 1000;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #09478e;
+  color: #02499a;
 }
 
 /* Botón hamburguesa (oculto en desktop) */

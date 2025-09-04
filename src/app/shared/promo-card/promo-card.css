@@ -22,10 +22,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1240px;
+  max-width: 1260px;
   margin: 0 auto;
-  padding: 75px;
-  gap: 20px;
+  padding: 55px;
+  gap: 40px;
   background-color: #f5f5f5; /* Color blanco hueso gris claro */
 }
 
@@ -44,6 +44,7 @@
   min-height: 300px;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 /* caja de texto: ahora en gris claro (como solicitaste) con borde suave */
@@ -126,7 +127,7 @@
 /* estilos específicos para las tarjetas promocionales */
 .promo-card h2 {
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 16px;
   color: #000000;
 }
@@ -167,18 +168,12 @@
 .center-image img {
   width: 405px;
   height: auto;
-  margin-top: 4rem;
+  margin-top: 6rem;
   object-fit: contain;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   border: 2px solid #e0e0e0;
 }
-
-/*.center-image img {
-  border-radius: 15px; /* Bordes redondeados 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra suave 
-  border: 2px solid #e0e0e0; /* Borde opcional, color gris claro 
- */
 
 /* ajustes responsivos */
 @media (max-width: 900px) {

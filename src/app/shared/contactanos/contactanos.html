@@ -1,0 +1,39 @@
+<div class="contactanos-container">
+  <div class="contactanos-content">
+    <!-- Sección de Formulario -->
+    <div class="form-section">
+      <h1 class="titulo-principal">¡Contáctanos!</h1>
+      <p class="form-description">
+        Estamos aquí para ayudarte. Completa el formulario y nos pondremos en contacto contigo.
+      </p>
+
+      <form (ngSubmit)="enviarCorreo()" #contactForm="ngForm">
+        <div class="form-group">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            [(ngModel)]="correo"
+            required
+            class="form-control"
+            placeholder="Ingresa tu correo electrónico"
+          />
+        </div>
+
+        <button type="submit" class="btn-primary" [disabled]="!contactForm.valid">
+          Enviar mensaje
+        </button>
+      </form>
+    </div>
+
+    <!-- Sección de Imagen -->
+    <div class="image-section">
+      <div class="image-container">
+        <img src="assets/BannerContactanos.png" alt="Imagen de contacto" class="imagen-contacto" />
+        <div class="image-overlays">
+          <span class="image-text">¡Sé parte de nuestra familia!</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

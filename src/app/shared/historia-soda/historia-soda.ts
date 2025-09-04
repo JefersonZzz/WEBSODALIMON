@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './historia-soda.css'
 })
 export class HistoriaSoda {
-
+  
 }

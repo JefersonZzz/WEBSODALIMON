@@ -47,7 +47,7 @@
 
           &:hover {
             opacity: 1;
-            color: #e63946;
+            color: #4096ffc3;
           }
         }
       }
@@ -85,7 +85,7 @@
       }
 
       &:hover {
-        color: #e63946;
+        color: #e5f932de;
       }
     }
   }
